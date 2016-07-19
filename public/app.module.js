@@ -5,5 +5,6 @@ angular.module('soundWishApp', [
   'ngCookies',
   'authenticate',
   'artistList',
+  'albumList',
   'logged'
 ]);
