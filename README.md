@@ -19,4 +19,13 @@ https://developer.api.autodesk.com
 https://api.spotify.com
 
 
+After cloning the repository, run:
+
+npm install
+
+bower install
+
+node index.js
+
+
 
