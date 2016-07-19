@@ -1,1 +1,7 @@
-<p>Please, <a href="/api/auth"> authenticate...</a></p>
+<div ng-if="$ctrl.hasCookie">
+  <span>{{$ctrl.token}}</span>
+  <a href="#" ng-click="$ctrl.signout()"> Sign out</a></p>
+</div>
+<div ng-if="$ctrl.hasCookie==false">
+  <p>Please, <a href="/api/auth"> sign in...</a></p>
+</div>

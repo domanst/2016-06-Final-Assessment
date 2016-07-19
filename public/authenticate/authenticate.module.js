@@ -1,3 +1,5 @@
 'use strict';
 
-angular.module('authenticate', []);
+angular.module('authenticate', [
+  'ngCookies'
+]);

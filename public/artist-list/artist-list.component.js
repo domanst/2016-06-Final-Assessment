@@ -4,11 +4,10 @@ angular.
   module('artistList').
   component('artistList', {
     templateUrl: 'artist-list/artist-list.template.html',
-    controller: ['$http', '$cookies',
-      function ArtistListController($http, $cookies) {
-
-        var hasCookie = !!$cookies.get('fa.tomadoman.com');
-        this.artists = undefined;
+    controller: ['$http',
+      function ArtistListController($http) {
+        
+        this.artists = {};
 
         this.searchForMusic = function () {
           var self = this;
