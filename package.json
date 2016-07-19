@@ -1,15 +1,19 @@
 {
   "name": "final-assessment",
   "version": "1.0.0",
-  "description": "Final assessment",
-  "main": "index.js",
+  "description": "final-assessment",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "postinstall": "bower install",
+    "prestart": "npm install",
+    "start": "node index.js"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/domanst/2016-06-Final-Assessment.git"
   },
+  "keywords": [
+    "final-assessment"
+  ],
   "author": "Tomasz Domański",
   "license": "ISC",
   "bugs": {

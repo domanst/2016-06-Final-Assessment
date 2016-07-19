@@ -1,6 +1,6 @@
 {
   "name": "final-assessment",
-  "description": "final asessment",
+  "description": "final-assessment",
   "main": "index.js",
   "authors": [
     "Tomasz Domański"
@@ -9,7 +9,7 @@
   "keywords": [
     "final-assessment"
   ],
-  "homepage": "https://github.com/domanst/2016-06-Final-Assessment#readme",
+  "homepage": "https://github.com/domanst/2016-06-Final-Assessment",
   "ignore": [
     "**/.*",
     "node_modules",
