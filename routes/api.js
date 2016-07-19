@@ -7,9 +7,9 @@ var router = express.Router();
 var config = {
   client_id: 'dTEjbCA1ggIKvdKt0vVgTDJwvkcm02P3',
   client_secret: 'AL2AloxJYPAsAD31',
-  redirect_uri: 'http://www.bootstrap.tomadoman.com:8000/api/oauth',
+  redirect_uri: 'http://www.fa.com:8000/api/oauth',
   authorize_endpoint: 'https://developer.api.autodesk.com/authentication/v1/authorize',
-  gettoken_endpoint: 'https://developer.api.autodesk.com/authentication/v1/gettoken'
+  gettoken_endpoint: 'https://developer.api.autodesk.com/authentication/v1/gettoken',
 };
 
 router.get('/auth', function (req, res) {
@@ -39,7 +39,8 @@ router.get('/oauth', function (req, res) {
     .headers({ 'Content-Type': 'application/x-www-form-urlencoded' })
     .send(queryString.stringify(data))
     .end(function (response) {
-      res.status(response.status).send(response.body);
+      var token = response.body.access_token;
+      res.redirect('/#!/logged/' + token);
     });
 });
 

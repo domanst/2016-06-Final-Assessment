@@ -1,0 +1,15 @@
+<div ng-if="$ctrl.hasCookie==false">
+  <authenticate></authenticate>
+</div>
+
+<form ng-submit="$ctrl.searchForMusic()">
+  Search for artist:
+  <input type="text" ng-model="$ctrl.query" name="text" />
+  <input type="submit" id="submit" value="Submit" />
+</form>
+
+<ul>
+  <li ng-repeat="a in $ctrl.artists">
+    <span>{{a.name}}</span>
+  </li>
+</ul>

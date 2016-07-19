@@ -2,5 +2,8 @@
 
 angular.module('soundWishApp', [
   'ngRoute',
-  'authenticate'
+  'ngCookies',
+  'authenticate',
+  'artistList',
+  'logged'
 ]);

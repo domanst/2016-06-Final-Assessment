@@ -3,22 +3,26 @@
 
 <head>
   <meta charset="utf-8">
-  <title>Sound Wishlist</title>
+  <title>Spotify lookup</title>
 </head>
 
 <body>
-  <h1>Sound Wishlist</h1>
-  <div class="navigation">
-  </div>
+  <h1>Lookup Spotify...</h1>
+  <div ng-view></div>
 
   <script src="lib/angular/angular.js"></script>
   <script src="lib/angular-route/angular-route.js"></script>
+  <script src="lib/angular-cookies/angular-cookies.js"></script>
+
   <script src="app.module.js"></script>
   <script src="app.config.js"></script>
   <script src="authenticate/authenticate.module.js"></script>
   <script src="authenticate/authenticate.component.js"></script>
+  <script src="artist-list/artist-list.module.js"></script>
+  <script src="artist-list/artist-list.component.js"></script>
+  <script src="logged/logged.module.js"></script>
+  <script src="logged/logged.component.js"></script>
 
-  <div ng-view></div>
 
 </body>
 
