@@ -1,0 +1,26 @@
+{
+  "name": "final-assessment",
+  "version": "1.0.0",
+  "description": "Final assessment",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/domanst/2016-06-Final-Assessment.git"
+  },
+  "author": "Tomasz Domański",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/domanst/2016-06-Final-Assessment/issues"
+  },
+  "homepage": "https://github.com/domanst/2016-06-Final-Assessment#readme",
+  "dependencies": {
+    "body-parser": "^1.15.2",
+    "bower": "^1.7.7",
+    "express": "^4.14.0",
+    "morgan": "^1.7.0",
+    "unirest": "^0.5.0"
+  }
+}
